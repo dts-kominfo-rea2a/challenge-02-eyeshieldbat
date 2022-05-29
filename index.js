@@ -34,10 +34,10 @@ function lakukanLooping(arrPegawai) {
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
   */
-  let jumlahPria = null;
+  let jumlahPria = 0;
   
   for (let i = 0; i < arrayObjectPegawai.length; i++) {
-    if (arrayObjectPegawai[i].jenisKelamin == "F") {
+    if (arrayObjectPegawai[i].jenisKelamin == "M") {
       jumlahPria++;
     }   
   }
@@ -46,10 +46,10 @@ function lakukanLooping(arrPegawai) {
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
       yang berisi jumlah wanita dari masing masing pegawai
   */
-  let jumlahWanita = null;
+  let jumlahWanita = 0;
 
   for (let i = 0; i < arrayObjectPegawai.length; i++) {
-    if (arrayObjectPegawai[i].jenisKelamin == "M") {
+    if (arrayObjectPegawai[i].jenisKelamin == "F") {
       jumlahWanita++;
     }   
   }
@@ -65,7 +65,7 @@ function lakukanLooping(arrPegawai) {
       Apabila imbang, maka komentar akan berisi:
         "Jumlah Pria dan Wanita berimbang"
   */
-  let komentar = null;
+  let komentar = "";
 
   if (jumlahPria > jumlahWanita) {
     komentar = "Jumlah Pria lebih banyak dari Wanita"
